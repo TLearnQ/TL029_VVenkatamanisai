@@ -1,0 +1,186 @@
+{
+  "title": "Nsmf_PDUSession",
+  "endpoint_count": 10,
+  "endpoints": [
+    {
+      "path": "/sm-contexts",
+      "method": "POST",
+      "summary": "Create SM Context",
+      "auth": {
+        "oAuth2ClientCredentials": {
+          "type": "oauth2",
+          "flows": {
+            "clientCredentials": {
+              "tokenUrl": "{nrfApiRoot}/oauth2/token",
+              "scopes": {
+                "nsmf-pdusession": "Access to the nsmf-pdusession API"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "/sm-contexts/{smContextRef}/retrieve",
+      "method": "POST",
+      "summary": "Retrieve SM Context",
+      "auth": {
+        "oAuth2ClientCredentials": {
+          "type": "oauth2",
+          "flows": {
+            "clientCredentials": {
+              "tokenUrl": "{nrfApiRoot}/oauth2/token",
+              "scopes": {
+                "nsmf-pdusession": "Access to the nsmf-pdusession API"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "/sm-contexts/{smContextRef}/modify",
+      "method": "POST",
+      "summary": "Update SM Context",
+      "auth": {
+        "oAuth2ClientCredentials": {
+          "type": "oauth2",
+          "flows": {
+            "clientCredentials": {
+              "tokenUrl": "{nrfApiRoot}/oauth2/token",
+              "scopes": {
+                "nsmf-pdusession": "Access to the nsmf-pdusession API"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "/sm-contexts/{smContextRef}/release",
+      "method": "POST",
+      "summary": "Release SM Context",
+      "auth": {
+        "oAuth2ClientCredentials": {
+          "type": "oauth2",
+          "flows": {
+            "clientCredentials": {
+              "tokenUrl": "{nrfApiRoot}/oauth2/token",
+              "scopes": {
+                "nsmf-pdusession": "Access to the nsmf-pdusession API"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "/sm-contexts/{smContextRef}/send-mo-data",
+      "method": "POST",
+      "summary": "Send MO Data",
+      "auth": {
+        "oAuth2ClientCredentials": {
+          "type": "oauth2",
+          "flows": {
+            "clientCredentials": {
+              "tokenUrl": "{nrfApiRoot}/oauth2/token",
+              "scopes": {
+                "nsmf-pdusession": "Access to the nsmf-pdusession API"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "/pdu-sessions",
+      "method": "POST",
+      "summary": "Create",
+      "auth": {
+        "oAuth2ClientCredentials": {
+          "type": "oauth2",
+          "flows": {
+            "clientCredentials": {
+              "tokenUrl": "{nrfApiRoot}/oauth2/token",
+              "scopes": {
+                "nsmf-pdusession": "Access to the nsmf-pdusession API"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "/pdu-sessions/{pduSessionRef}/modify",
+      "method": "POST",
+      "summary": "Update (initiated by V-SMF or I-SMF)",
+      "auth": {
+        "oAuth2ClientCredentials": {
+          "type": "oauth2",
+          "flows": {
+            "clientCredentials": {
+              "tokenUrl": "{nrfApiRoot}/oauth2/token",
+              "scopes": {
+                "nsmf-pdusession": "Access to the nsmf-pdusession API"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "/pdu-sessions/{pduSessionRef}/release",
+      "method": "POST",
+      "summary": "Release",
+      "auth": {
+        "oAuth2ClientCredentials": {
+          "type": "oauth2",
+          "flows": {
+            "clientCredentials": {
+              "tokenUrl": "{nrfApiRoot}/oauth2/token",
+              "scopes": {
+                "nsmf-pdusession": "Access to the nsmf-pdusession API"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "/pdu-sessions/{pduSessionRef}/retrieve",
+      "method": "POST",
+      "summary": "Retrieve",
+      "auth": {
+        "oAuth2ClientCredentials": {
+          "type": "oauth2",
+          "flows": {
+            "clientCredentials": {
+              "tokenUrl": "{nrfApiRoot}/oauth2/token",
+              "scopes": {
+                "nsmf-pdusession": "Access to the nsmf-pdusession API"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "/pdu-sessions/{pduSessionRef}/transfer-mo-data",
+      "method": "POST",
+      "summary": "Transfer MO Data",
+      "auth": {
+        "oAuth2ClientCredentials": {
+          "type": "oauth2",
+          "flows": {
+            "clientCredentials": {
+              "tokenUrl": "{nrfApiRoot}/oauth2/token",
+              "scopes": {
+                "nsmf-pdusession": "Access to the nsmf-pdusession API"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
